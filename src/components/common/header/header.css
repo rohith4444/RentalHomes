@@ -1,0 +1,113 @@
+header {
+    background-color: #fff;
+    height: 10%;
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+header h2{
+    font-size: 20px;
+    color: black;
+}
+
+header .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    margin-left: 30px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+header a:hover {
+    color: #4169E1;
+}
+header ul a{
+    color: black;
+}
+header span {
+    width: auto;
+    padding: 0 6px;
+    background-color: #4169E1;
+    border-radius: 50px;
+    color: #fff;
+    margin-right: 4px;
+    font-weight: 400;
+}
+
+header h4 {
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.button a {
+    margin-left: 0;
+}
+
+header .toggle {
+    display: none;
+}
+header .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* .dropdown{
+    display: none;
+} */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 0;
+    }
+    header img {
+        margin-top: 30px;
+    }
+    header .button {
+        display: none;
+    }
+    header .nav .flex {
+        display: none;
+    }
+    header .toggle {
+        display: block;
+        margin-top: 20px;
+    }
+    header .small {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+    }
+    header li a {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: black;
+    }
+}

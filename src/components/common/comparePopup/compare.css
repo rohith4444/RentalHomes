@@ -1,0 +1,39 @@
+.table {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+table, th, td {
+    padding: 1rem 2rem;
+}
+
+.table__header {
+    margin: 2rem 0rem;
+}
+
+/* main.table {
+    border: 2px black;
+    border-radius: 0.5rem;
+} */
+
+.table__body {
+    /* border: 1px solid black; */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 0.8rem #0005;
+    margin: 2rem;
+}
+
+th img {
+    width: 144px;
+    height: 144px;
+    margin: .5rem;
+    border-radius: 50%;
+}
+
+.borderBottom {
+    border-bottom: 1px dotted black;
+}

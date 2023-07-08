@@ -1,0 +1,135 @@
+.recent .text {
+    padding: 30px;
+  }
+.recent .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.recent .category i {
+  font-size: 20px;
+  color: #bec7d8;
+}
+.recent p {
+  color: #72809d;
+}
+.recent .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px;
+}
+
+.listcontent .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.listcontent .box .img {
+  height: 10rem;
+  width: 15rem;
+}
+
+.listcontent .box .text{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 10px;
+  height: 100%;
+}
+
+.listcontent .box .button {
+  border-top: 0px solid #e4e8f3;
+  flex-direction: column;
+}
+
+.listcontent span {
+  margin-top: 15px;
+}
+
+.listorgrid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.popupWhole {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupData {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.popupImage {
+  flex: 1;
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+.popupData .details {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 10px;
+}
+
+.dataEntry {
+  display: flex;
+  align-items: center;
+}
+
+.popupWhole p {
+  margin-left: 0px;
+}
+
+/* .grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+} */
+
+.recent .grid-item img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.recent .grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recent .grid-container .grid-item .button {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+
+.recent .grid-item {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  border-radius: 6px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .recent .grid-item {
+    flex-basis: calc(100% - 10px);
+  }
+}

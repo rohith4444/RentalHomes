@@ -1,0 +1,118 @@
+.sell {
+    background-image: url("../images/sell.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 15rem;
+    background-size: 100% 100%;
+}  
+.sell  p{
+    padding: 20px;
+    color: #fff; /* Adjust the text color */
+    text-align: center;
+    font-size: 45px;
+}
+.listparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+.list{
+    box-sizing: border-box;
+    box-shadow: 0 0 2.2em rgba(25,0,58,0.15);
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 60%;
+}
+.listing h2{
+    text-align: center;
+    padding: 2rem;
+    font-weight: 600;
+}
+.listingcon {
+    padding: 0 2rem;
+}
+.listconp2 {
+    color: dark black;
+    text-align: justify;
+    font-weight: 300;
+}
+.listingconp{
+    font-weight: bold;
+    text-align: center;
+}
+.listul {
+    list-style-type: circle;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: 500;
+  }
+.list_part_parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.list_part {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+.list_section{
+    flex: 1;
+    padding: 2rem 4rem;
+}
+.listp{
+    font-weight: bold;
+    margin: 1rem 0;
+    text-align: justify;
+}
+.listp2{
+
+    font-weight: 300;
+}
+.sellbottom {
+    background-image: url("../images/selllast.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 15rem;
+    background-size: 100% 100%;
+}  
+.sellbottomp1{
+    color: black; /* Adjust the text color */
+    text-align: left;
+    font-size: 17px;
+    padding: 0 12rem;
+}
+.sellbottomp{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+    padding: 2rem 12rem;
+}
+.sellbottombutton {
+    margin: 2rem 12rem;
+}
+.listingconparent{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.listItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+    .listingconparent{
+        flex-direction: column;
+    }
+    .list_part {
+        flex-direction: column;
+    }
+}

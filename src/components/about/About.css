@@ -1,0 +1,244 @@
+.about_heading {
+    font-size: 25px;
+    color: black;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    margin-bottom: 2rem;
+}
+.about_bottom {
+    display : flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 3rem 4rem;
+    gap: 5rem;
+    background-color: whitesmoke;
+}
+.about_left {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-content: center;
+    font-style: italic;
+}
+.about_left p {
+    height: fit-content;
+    font-size: 35px;
+}
+.about_left p::before {
+    content: '"';
+    margin-right: 5px;
+}    
+.about_left p::after {
+    content: '"';
+    margin-left: 5px;
+}
+.about_right {
+    display: flex;
+    flex: 2.5;
+}
+
+.about_purpose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about_purpose h2{
+    font-size: 35px;
+    color: black;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.about_purpose p{
+    font-size: 35px;
+    color: black;
+    margin-bottom: 2rem;
+}
+.about_vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about_vision p {
+    color: dark black;
+    text-align: justify;
+    width: 40%;
+}
+
+
+.about_helpblock{
+    margin: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about_help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.about_help h2{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
+.about_helptop{
+    display: flex;
+    gap: 3rem;
+    margin-top: 5rem;
+    width: 80%;
+    justify-content: center;
+}
+.helptop_left {
+    display: flex;
+    flex: 1;
+    font-size: 30px;
+    justify-content: flex-end;
+    color: black;
+}
+.helptop_right {
+    display: flex;
+    flex: 3;
+    color: dark black;
+    text-align: justify;
+    font-weight: 250;
+}
+.about_team{
+    padding: 2rem;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+.teamhead{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+.teamhead h2{
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    color: black;
+}
+.card{
+    box-shadow: 0 0 2.2em rgba(25,0,58,0.15);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color:#4169E1;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.card .img-container{
+    width: 8em;
+    height: 8em;
+    background-color: #4169E1;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+.card img{
+    width: 100%;
+    border-radius: 50%;
+}
+.card h3{
+    font-weight: 500;
+    color: black;
+}
+.card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0.2em 0;
+    letter-spacing: 2px;
+    color: black;
+}
+.social-links{
+    width:50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+}
+
+.card:hover{
+    background: linear-gradient(#6045ea, #8567f7);
+    color: #ffffff;
+}
+.card:hover .img-container{
+    transform: scale(1.15);
+}
+.upcoming {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem;
+}
+.about_upcoming {
+    box-sizing: border-box;
+    box-shadow: 0 0 2.2em rgba(25,0,58,0.15);
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+}
+.about_title h2 {
+    text-align: left;
+    padding: 1rem;
+    font-weight: 600;
+}
+.about_updates {
+    text-align: justify;
+    padding: 0 1rem;
+    align-items: center;
+    color: dark black;
+}
+.aboutul {
+    list-style-type: circle;
+    margin: 0 1rem;
+    padding: 2rem;
+  } 
+@media screen and (max-width: 768px){
+    section{
+        padding: 1em 7em;
+    }
+    .about_bottom {
+        flex-direction: column-reverse;
+    }
+    .about_vision p {
+        width: 90%;
+    }
+    .about_upcoming {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 992px){
+    section{
+        padding: 1em;
+    }
+    .card{
+        padding: 5em 1em;
+    }
+    .column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+}

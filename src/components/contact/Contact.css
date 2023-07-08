@@ -1,0 +1,144 @@
+/* ContactForm.css */
+
+.Contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.right form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.right input {
+  width: 100%;
+  height: 35px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  border-color: gray;
+}
+
+.right input:focus {
+  border: 2px solid #4169E1;
+}
+
+.right textarea {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  border-color: gray;
+}
+
+.right textarea:focus {
+  border: 2px solid #4169E1;
+}
+
+.right label {
+  margin-top: 1rem;
+  color: black
+}
+
+.right input[type="submit"] {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: #4169E1;
+  color: white;
+  border: none;
+}
+
+.contactus{
+  display: flex;
+  gap: 5rem;
+  margin-top: 5rem;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.contactus::after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: gray;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.left {
+  width: 100%;
+  max-width: 500px;
+}
+.right {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  display:flex;
+  flex-direction: column;
+  /* padding-left: 3rem; */
+}
+.contact h2{
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0.5rem;
+}
+.DoubleQoutes {
+  display: block;
+  padding: 10px;
+  font-style: italic;
+  margin-top: 3rem;
+  text-align: justify;
+}
+
+.DoubleQoutes::before {
+  content: '"';
+  margin-right: 5px;
+}
+
+.DoubleQoutes::after {
+  content: '"';
+  margin-left: 5px;
+}
+
+.rating {
+  font-size: 30px;
+}
+
+.star {
+  color: #ddd;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.star:hover,
+.star:focus,
+.star.checked {
+  color: #ffdd00;
+}
+@media only screen and (max-width: 768px) {
+  .contactus {
+    flex-direction: column;
+  }
+  .contactus::after {
+    display: none;
+  }
+  .left,
+  .right {
+    max-width: 100%;
+  }
+  .right {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+}
+

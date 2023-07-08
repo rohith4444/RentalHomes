@@ -1,0 +1,113 @@
+.contain {
+    padding: 30px;
+    height: fit-content;
+    width: 60%;
+    border-radius: 6px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.contain header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.contain header::before {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+
+.contain form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 450px;
+    background-color: #fff;
+}
+
+.contain form .details {
+    margin-top: 30px;
+}
+
+.contain form .title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.contain form .fields {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+form .fields .input-field {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 15px);
+    margin: 4px 0; 
+}
+
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.contain form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.contain form .button {
+    align-items: center;
+    justify-content: center;
+}
+
+.contain form .button .nextBtn {
+    margin: auto;
+    color: #fff;
+}
+
+form button:hover{
+    background-color: O#265df2;
+}
+
+form button i{
+    margin: 0 6px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,269 @@
+.sidebar_container{
+    display:flex;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+}
+.sidebar-open{
+    background: #4169E1;
+    color: #fff;
+    height: 90vh;
+    width: 350px;
+    transition: all 0.5s;
+}
+.sidebar-close{
+    background: #4169E1;
+    color: #fff;
+    height: 90vh;
+    width: 50px;
+    transition: all 0.5s;
+}
+.top_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 15px;
+}
+.logo-open{
+    font-size: 30px;
+    display: block;
+}
+.logo-close{
+    font-size: 30px;
+    display: none;
+}
+.bars-open{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.bars-close{
+    display: flex;
+    font-size: 25px;
+    margin-left: 0px;
+}
+.link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.link:hover{
+    background: #fff;
+    color: #000;
+    transition: all 0.5s;
+}
+.active{
+    display: flex;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+    background: #fff;
+    color: #000;
+}
+.icon {
+    font-size: 20px;
+}
+.link_text-open {
+    font-size: 20px;
+    display: block;
+}
+.link_text-close {
+    display: none;
+}
+.input {
+    width: 100%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+    border-color: gray;
+}
+.input:focus {
+    border: 2px solid #4169E1;
+}
+.textarea {
+    height: 100px;
+}
+.entry {
+    width: 100%;
+    margin: 0.5rem 0rem;
+}
+.entry1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+    margin: 0.5rem 0rem;
+}
+.subentry {
+    width: 100%;
+}
+.transparent {
+    background-color: white;
+}
+
+
+
+
+.personal {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    width: 100%;
+}
+.profilePicture {
+    display: flex;
+    flex: 1;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.profileDetails {
+    flex: 1;
+    padding: 2rem;
+}
+.editClose {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+
+
+
+.add_property_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.add_property_container h3{
+    margin: 1rem 0rem;
+}
+.add_property_container .details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    flex: 1;
+    padding: 2rem;
+}
+.add_property_container .eminities {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    flex: 1;
+    padding: 2rem;
+}
+.btn_eminities {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+.eminity_button {
+    padding: 10px 20px;
+}
+.eminity_button .close-btn {
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
+
+
+
+.property_list {
+    width: 100%;
+}
+.property_list .grid-item img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+.property_list .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.property_list .grid-container .grid-item .button {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+.property_list .grid-item {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+    border-radius: 6px;
+    padding: 30px;
+    cursor: pointer;
+}
+.listcontent .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    margin-bottom: 20px;
+}
+.listcontent .box .img {
+    height: 10rem;
+    width: 15rem;
+}  
+.listcontent .box .text{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 10px;
+    height: 100%;
+}
+.listcontent .box .button {
+    border-top: 0px solid #e4e8f3;
+    flex-direction: column;
+}  
+.listcontent span {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 850px) {
+    .personal {
+        flex-direction: column;
+    }
+    .sidebar-open {
+        width: 50px;
+    }
+    .logo-open {
+        display: none;
+    }
+    .bars-open {
+        margin-left: 0px;
+    }
+    .link_text-open {
+        display: none;
+    }
+
+
+
+
+    .add_property_container {
+        flex-direction: column;
+    }
+
+    .property_list .grid-item {
+        flex-basis: calc(100% - 10px);
+    }
+}

@@ -1,0 +1,138 @@
+.section_padding{
+    padding: 4rem 4rem;
+}
+.bottom{
+    background-color: #2d2d32;
+}
+.sb_footer{
+    display: flex;
+    flex-direction: column;
+}
+.sb_footer_links{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem; 
+    justify-content: space-between; 
+}
+.sb_footer_links_div{
+    width: 200px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    flex: 1;
+}
+a{
+    color: rgb(175,175,179);
+    text-decoration: none;
+}
+.sb_footer_img {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 80%;
+}
+.apps{
+    flex: 1.2;
+
+}
+.Social_Media{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+}
+.Social_Media p{
+    padding: 0;
+}
+.Social_Media img{
+    width: 40%;
+
+}
+.sb_footer_links_div h4{
+    font-size: 18px;
+    line-height: 17px;
+    margin-bottom: 1.5rem;
+}
+.sb_footer_links_div p{
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 0.5rem 0;
+    cursor: pointer;
+    padding: 5px 0 5px 0;
+}
+.footer_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+}
+.footer_bottom_Qoute p{
+    font-size: 13px;
+    line-height: 15px;
+    margin-left: 0.5rem;
+    color: white;
+    font-weight: 600;
+}
+hr{
+    color: white !important;
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .sb_footer-heading h1{
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sb_footer-heading h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .sb_footer_links div{
+        margin: 1rem 0;
+    }
+    .sb_footer-btn p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer_bottom{
+        flex-direction: column;
+        justify-content: left;
+    }
+    .footer_bottom_Qoute p{
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sb_footer-heading h1{
+        font-size: 27px;
+        line-height: 38px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
