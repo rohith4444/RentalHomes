@@ -123,12 +123,5 @@ RentalHomes is a platform where:
 - Premium membership plans
 - Online rent payment solutions
 
-## Contributors
-- Rohith Reddy Mandala - Co-Founder
-- Sandeep Varma Indukuri - Co-Founder
-
 ## License
 This project is licensed under the Apache License 2.0
-
-## Note
-This is a personal project created for learning and demonstration purposes.
