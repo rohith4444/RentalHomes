@@ -1,0 +1,32 @@
+package Backend.crud.Enum;
+
+public enum IndianState {
+    AndhraPradesh,
+    ArunachalPradesh,
+    Assam,
+    Bihar,
+    Chhattisgarh,
+    Goa,
+    Gujarat,
+    Haryana,
+    HimachalPradesh,
+    JammuAndKashmir,
+    Jharkhand,
+    Karnataka,
+    Kerala,
+    MadhyaPradesh,
+    Maharashtra,
+    Manipur,
+    Meghalaya,
+    Mizoram,
+    Nagaland,
+    Odisha,
+    Punjab,
+    Rajasthan,
+    Sikkim,
+    TamilNadu,
+    Telangana,
+    Tripura,
+    UttarPradesh,
+    WestBengal
+}
